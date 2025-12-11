@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Darkish Photography - Capturing light, shadows, and stories in Riyadh, KSA.">
+<meta name="keywords" content="Photography, Portraits, Events, School Photography, Riyadh">
+<meta name="author" content="Magret">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="tan.css">
+ <link rel="icon" href="logo-Photoroom.webp" type="image/webp">
+    <title>Darkish-Website</title>
+</head>
+<body>
+   <nav>
+    <div class="nav_header">
+        <div class="nav-logo">
+           
+
+            <img src="logo-Photoroom.webp" alt="Dark-ish-photos"  loading="lazy">
+        </div>
+        <div class="menu_btn" id="menu_Btn"> 
+        <i class="ri-menu-3-line"></i>
+        </div>
+    </div>
+<ul class="navigation" id="navigation">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Portfolio">Portfolio</a></li>
+    <li>
+  <a href="#Services">Services</a>
+  <ul class="services-links">
+     <li><a href="#School">School</a></li>
+     <li><a href="#Portrait">Portrait</a></li>
+      <li><a href="#Events">Events</a></li>
+  </ul>
+</li>
+    <li><a href="#Contact-us">Contact-us</a></li>
+
+</ul>
+   </nav> 
+<main>
+   <header id="Home">
+    <div class="section_container header_container">
+        <div class="header_image">
+            <img src="Dark-ish-photos/Dark-ish-1-Photoroom.webp" alt="Darkish"  loading="lazy"/>
+        </div> 
+        <div class="header_heading">
+            <h1>Light Meets Soul <span>Photographer</span></h1>
+            <h2>Riyadh, KSA</h2>
+            <div class="header_btn">
+            
+            <button type="submit" class="book-btn btn">Book a Session</button>
+</div>
+        </div>
+    </div>
+   </header>
+<section class="section_container about_container" id="About">
+    <div class="about_image">
+        <img src="Dark-ish-photos/logo 14.webp" alt="Darkish"  loading="lazy"></div>
+        <div class="about-content">
+            <h2 class="section_header">About Me</h2>
+            <p>Hi, my name is Peter—<br>
+I capture moments where shadows breathe and light softly reveals truth.
+My photography turns darkness into emotion and stillness into quiet beauty.
+I seek the details the world almost overlooks, framing them with depth and intention.
+Every image is made to linger… long after your eyes move on.</p>
+<div class="about-btn">
+    <button type="button" class="btn"  id="viewGalleryBtn">View My Gallery</button>
+</div>
+        </div>
+</section>
+
+
+<form id="bookingForm" class="form-popup" action="https://formspree.io/f/mblnypyr" method="post"    style="display:none";>
+  <div class="form-container">
+    <h1>Book a Session</h1>
+
+    <label for="name">Name</label>
+    <input type="text" id="booking-name" name="booking-name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="booking-email" name="booking-email" required>
+
+    <label for="select">Session</label>
+    <select name="select" id="select">
+      <option value="Portrait">Portrait</option>
+      <option value="School">School</option>
+      <option value="events">Events</option>
+    </select>
+
+    <button type="submit">Submit</button>
+    <button type="button" id="closeFormBtn">Close</button>
+
+    <div id="bookingSuccessMessage" style="display:none; color:#c7cc30; text-align:center;">
+      Your booking has been sent!
+    </div>
+  </div>
+</form>
+
+
+<section class="section_container portfolio_container" id="Portfolio">
+    <h2 class="section_header">Portfolio</h2>
+    <div class="portfolio_arrangement">
+       <div> <img src="Dark-ish-photos/Dark-ish-1.webp" alt="Darkish"  loading="lazy" class="portfolio-img">
+        <img src="Dark-ish-photos/Dark-ish-121.webp" alt="Darkish"  loading="lazy" class="portfolio-img">
+       <img src="Dark-ish-photos/Dark-ish-140.webp" alt="Darkish"  loading="lazy" class="portfolio-img">
+       </div>
+       <div>
+        <img src="Dark-ish-photos/Dark-ish-145.webp" alt="Darkish"  loading="lazy" class="portfolio-img">
+        <img src="Dark-ish-photos/Dark-ish-20.webp" alt="Darkish"  loading="lazy" class="portfolio-img">
+        </div>
+        <div>
+        <img src="Dark-ish-photos/Dark-ish-77.webp" alt="Darkish"class="portfolio-img">
+        <img src="images-photography/corporate-photography/TOWERS-86.webp" alt="Darkish"  loading="lazy" class="portfolio-img">
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- ===== SERVICES SECTION ===== -->
+<section id="services" class="services-container">
+    <h2 class="section_header">Services</h2>
+
+    <div class="services-grid">
+
+        <!-- ===== EVENTS ===== -->
+        <div class="service-card" id="Events">  <h3>Events</h3> 
+
+                <img src="images-photography/Events/ARCO049.webp" alt="Events" 
+                  class="service-thumb service-link" 
+                  data-gallery="events"
+                  width="150"  loading="lazy">
+        </div>
+
+        <!-- ===== PORTRAIT ===== -->
+        <div class="service-card" id="Portrait">
+              <h3>Portrait</h3> 
+                <img src="images-photography/portrait-photography/Dark-ish-28.webp" alt="Portrait" 
+                  class="service-thumb service-link" 
+                   data-gallery="portrait" 
+                   width="150"   loading="lazy">
+        </div>
+
+        <!-- ===== SCHOOL ===== -->
+        <div class="service-card" id="School">
+              <h3>School</h3> 
+           
+                <img src="images-photography/school-photography/TOWERS-31.webp" alt="School" 
+                  class="service-thumb service-link" 
+                data-gallery="school"
+                width="150"  loading="lazy">
+                
+            
+        </div>
+
+    </div>
+
+    
+<div id="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+    <img class="lightbox-img" src="" alt="Darkish"  loading="lazy">
+</div>
+
+<div id="gallery-images" style="display: none;">
+<!--events-->
+<div > 
+      <img src="images-photography/Events/ARCO049.webp"  class="events thumbnail"  alt="Darkish"  loading="lazy">
+    <img src="images-photography/Events/MOSES071.webp"  class="events thumbnail"  alt="Darkish"  loading="lazy">
+    <img src="images-photography/Events/TOWERS-90.webp"  class="events thumbnail"  alt="Darkish"  loading="lazy">
+
+</div>
+  
+    <!--portraits-->
+   <div >
+     <img src="images-photography/portrait-photography/Dark-ish-28.webp" class="portrait thumbnail" alt="Darkish"  loading="lazy">
+    <img src="images-photography/portrait-photography/Dark-ish-62.webp" class="portrait thumbnail"  alt="Darkish" loading="lazy">
+    <img src="images-photography/portrait-photography/Dark-ish-12.webp" class="portrait thumbnail" alt="Darkish"  loading="lazy">
+    <img src="images-photography/portrait-photography/Dark-ish-65.webp" class="portrait thumbnail" alt="Darkish"  loading="lazy">
+   </div>
+   
+
+    <!-- SCHOOL --> <div >
+        <img src="images-photography/school-photography/TOWERS-31.webp"  class="school thumbnail" alt="Darkish"  loading="lazy">
+    <img src="images-photography/school-photography/TOWERS-11.webp"  class="school thumbnail" alt="Darkish"  loading="lazy">
+    <img src="images-photography/school-photography/TOWERS-67 (1).webp"  class="school thumbnail" alt="Darkish"  loading="lazy">
+    </div>
+    
+
+</div>
+</section>
+
+<section id="gallerySection" class="hidden-gallery">
+    <h2 class="section_header">My Gallery</h2>
+
+    <div class="gallery-grid">
+        <img class="gallery-img" src="Dark-ish-photos/Dark-ish-1.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="Dark-ish-photos/Dark-ish-20.webp" alt=" Darkish"  loading="lazy">
+        <img class="gallery-img" src="Dark-ish-photos/Dark-ish-44.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="Dark-ish-photos/Dark-ish-77.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="Dark-ish-photos/Dark-ish-121.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="Dark-ish-photos/Dark-ish-140.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="Dark-ish-photos/Dark-ish-145.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="images-photography/Events/TOWERS-90.webp" alt="Darkish"  loading="lazy">
+     <img class="gallery-img" src="images-photography/school-photography/TOWERS-11.webp" alt="Darkish"  loading="lazy">
+
+        <img class="gallery-img" src="images-photography/corporate-photography/TOWERS-2.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="images-photography/corporate-photography/TOWERS-86.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="images-photography/Events/MOSES071.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="images-photography/school-photography/TOWERS-13.webp" alt="Darkish"  loading="lazy">
+        <img class="gallery-img" src="images-photography/Events/pic 2.webp" alt="Darkish"  loading="lazy">
+
+
+    </div>
+</section>
+
+
+
+
+<section class="contact" id="Contact-us">
+    <div class="section_container contact-container">
+<div class="contact-content">
+    <h2 class="section_header"> Contact Us</h2>
+    <p>Every project starts with a conversation. Whether you need portraits, creative edits, or a full visual story, I'm here to help shape your ideas with care and intention. Contact me anytime, and let's begin crafting images that truly stay with you.</p>
+
+     <form id="contactForm" action="https://formspree.io/f/mblnypyr"  method="post">
+    <div class="input_row">
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+       <input type="email" name="email" id="email" placeholder="Your Email" required>
+    </div>
+       <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+
+       <button class="btn">Submit</button>
+   </form>
+   <div id="successMessage" style="display:none;color:#c7cc30;text-align:center;">Your message has been sent!</div>
+</div>
+<div class="contact-image">
+    <img src="Dark-ish-photos/Dark-ish-1-Photoroom.webp" alt="Darkish"  loading="lazy">
+</div>
+
+    </div>
+</section>
+</main>
+<footer>
+  <div class="section_container footer-container">
+    <div class="footer-col">
+        <h4 class="section_header">Get In Touch</h4>
+        <p>Reach out for inquiries, collaboration or book a session</p>
+    </div>
+
+    <div class="footer-col">
+        <h4 class="section_header">Our Social Links</h4>
+        
+     <ul class="footer-socials">
+
+  <li class="instagram">
+  <a href="https://instagram.com/Dark_ish" target="_blank">
+    <i class="ri-instagram-line"></i>
+  </a>
+</li>
+
+
+  <li class="whatsapp">
+  <a href="https://wa.me/966534827012" target="_blank">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+</li>
+
+ </ul>
+    </div>
+  </div>  
+    <div class="footer-bar">
+    <p>&copy; 2025 Darkish Photography. Capturing light, shadows, and stories. All Rights Reserved.</p>
+  </div>
+
+</footer>
+  
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="index.js"></script>
+</body>
+</html>
