@@ -67,6 +67,12 @@ nav .menu_btn{
    cursor: pointer;
 }
 
+.menu_btn i {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
 .navigation {
    position: absolute;
    right: 0;
@@ -102,28 +108,36 @@ nav .menu_btn{
   .header_container{
    display: grid;
    padding-block:0 ;
-   overflow: hidden;}
+   overflow: hidden;
+  }
 
 .header_image{height: 60vh;}
 .header_heading{
-   padding-block:0 2rem ;}
+   padding-block:0 2rem ;
+  }
 
 .header_heading h1{
-font-size: 4.5rem;
-font-weight: 800;
+font-size: 3.5rem;
+font-weight: bolder;
 font-family: 'playfair', serif;
 color: rgb(32, 109, 56);
 text-align: center;
 margin-top: 0.5rem;
 } 
-.header_heading span {
-font-size: 3.5rem;
-font-weight: 600;
+
+.second-heading{
+font-size: 2.5rem;
+font-weight: 800;
 font-family: 'playfair''EB Garamond', serif;
 color: #a1a124;
 text-align: center;
 margin-top: 1rem;
 }  
+  .logo-line {
+    width: 2.8rem;
+    height: 0.45rem;
+    top: -0.12em;
+  }
 
 .header_heading h2{
 font-size: 2.5rem;
@@ -200,7 +214,7 @@ margin-top: 4rem;}
 
 .about-content {
   max-width: 450px;
-  margin: 0 auto;
+  margin:0 auto;
   text-align: center; }
 
 .about-content p {
@@ -402,10 +416,10 @@ border-radius: 10px;}
   background-color: transparent;
   border-bottom:2.5px solid #02742c ;
   border-radius: 10px;
-  color: #fff; /* match input text color */
-  font-family: 'EB Garamond', serif; /* match input font */
+  color: #fff; 
+  font-family: 'EB Garamond', serif; 
   font-size: 1rem;
-  resize: vertical; /* user can only resize vertically */
+  resize: vertical; 
 }
 .contact-content input::placeholder,
 .contact-content textarea::placeholder {
@@ -732,3 +746,16 @@ nav {
 }
 
  }
+ .brand-main {
+  display: inline-flex;
+  align-items: center; /* TRUE center — like the logo */
+}
+
+ .heading-line {
+  display: inline-block;
+  width: 2rem;
+  height: 0.55rem;
+  background-color: #c7cc30;
+  margin: 0 0.6rem;
+
+}

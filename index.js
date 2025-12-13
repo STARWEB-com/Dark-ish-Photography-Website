@@ -2,15 +2,25 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // ===== MOBILE MENU =====
     const menuBtn = document.querySelector("#menu_Btn");
     const navigation = document.querySelector("#navigation");
+      const menuIcon = document.getElementById("menuIcon");
 
-    if (menuBtn) {
+   
         menuBtn.addEventListener("click", () => {
             navigation.classList.toggle("open");
-        });
+
+            if (navigation.classList.contains("open")) {
+      menuIcon.classList.remove("ri-menu-3-line");
+      menuIcon.classList.add("ri-close-line"); 
+    } else {
+
+              menuIcon.classList.remove("ri-close-line");
+      menuIcon.classList.add("ri-menu-3-line"); 
     }
+  });
+
+
 
     // ===== LIGHTBOX =====
     const lightbox = document.getElementById("lightbox");
@@ -76,7 +86,7 @@ portfolioImages.forEach((img, index) => {
     }
 });
 
-// Keyboard navigation for lightbox
+
 document.addEventListener("keydown", (e) => {
     if (lightbox.style.display === "flex") {
         if (e.key === "ArrowRight") nextBtn.click();
