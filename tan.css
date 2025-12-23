@@ -56,6 +56,7 @@ nav{
 .nav_header {
    padding: 0.15rem 0.5rem !important; 
    width: 100%;
+   margin: 0 auto;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -68,7 +69,7 @@ nav .menu_btn{
 }
 
 .menu_btn i {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
@@ -78,21 +79,22 @@ nav .menu_btn{
    right: 0;
    display: none;      
    flex-direction: column;
-   gap: 1.5rem;
+   gap: 1rem;
   padding: 0.5rem 1rem;
    background-color: rgba(0,0,0,0.65);   
    border-radius: 5px;
    z-index: 10;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .navigation.open {display: flex; }
 
 .navigation a {
     color: #02742c;     
-    font-weight: 500;
+    font-weight: 700;
+
     text-align: right;  
-    transition: color 0.3s;}
+    transition: color 0.1s;}
 
 .navigation a:hover {color: white;}
 
@@ -424,6 +426,7 @@ margin-top: 5rem;}
   margin-bottom: 1rem;
   outline: none;
   border: none;
+  color: white;
   background-color: transparent;
   border-bottom:2.5px solid #02742c ;
 border-radius: 10px;}
@@ -712,13 +715,11 @@ nav {
     justify-content: space-between;
  padding: 0.2rem 0.5rem;   }
 
-.nav_links {
-    display: flex;
+  .navigation {color: #02742c;
+  display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 0;}
-
-  .navigation a{color: #02742c; }
+    margin-right: 2rem; }
 
   .navigation a:hover {
     color: #fff;
